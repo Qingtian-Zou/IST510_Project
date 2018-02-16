@@ -22,9 +22,11 @@ def main():
     i=0
     for url in images_url:
         img_data=requests.get(url).content
-        if not os.path.exists(FLAGS.keyword):
-            os.makedirs(FLAGS.keyword)
-        with open(os.path.join(os.getcwd(),FLAGS.keyword,FLAGS.keyword+str(i+1)+'.jpg'),'wb') as handler:
+        if not os.path.exists('downloaded_images'):
+            os.makedirs('downloaded_images')
+        if not os.path.exists(os.path.join('downloaded_images',FLAGS.keyword)):
+            os.makedirs(os.path.join('downloaded_images',FLAGS.keyword))
+        with open(os.path.join(os.getcwd(),'downloaded_images',FLAGS.keyword,FLAGS.keyword+str(i+1)+'.jpg'),'wb') as handler:
             handler.write(img_data)
         i+=1
         if i==20:
