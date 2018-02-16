@@ -1,6 +1,7 @@
 # My
 256_ObjectCategories/
 *.jpg
+bottlenecks/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
