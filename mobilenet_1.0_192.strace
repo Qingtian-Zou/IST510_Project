@@ -1,0 +1,4 @@
+13:06:45.192306 execve("/usr/bin/python", ["python", "-m", "scripts.retrain", "--bottleneck_dir=tf_files/mobile"..., "--model_dir=tf_files/models/", "--summaries_dir=tf_files/trainin"..., "--output_graph=tf_files/retraine"..., "--output_labels=tf_files/labels_"..., "--architecture=mobilenet_1.0_192", "--image_dir=256_ObjectCategories"], [/* 63 vars */]) = 0
+13:06:45.503289 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=30516, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+13:29:09.682457 exit_group(0)           = ?
+13:29:09.697281 +++ exited with 0 +++

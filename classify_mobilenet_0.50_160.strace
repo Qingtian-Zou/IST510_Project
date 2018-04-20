@@ -1,0 +1,4 @@
+21:32:22.922255 execve("/usr/bin/python3", ["python3", "classify.py", "--graph=tf_files/retrained_mobil"...], [/* 63 vars */]) = 0
+21:32:23.261546 --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=6883, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+23:27:45.152260 exit_group(0)           = ?
+23:27:45.180457 +++ exited with 0 +++
