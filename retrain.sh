@@ -1,7 +1,8 @@
 #!/bin/bash
 
+RELATIVE_SIZE=1.0
 IMAGE_SIZE=224
-ARCHITECTURE="mobilenet_1.0_${IMAGE_SIZE}"
+ARCHITECTURE="mobilenet_${RELATIVE_SIZE}_${IMAGE_SIZE}"
 
 strace -tt -e trace=execve,exit_group -o "${ARCHITECTURE}.strace" \
     python -m scripts.retrain \
